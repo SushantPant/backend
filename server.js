@@ -5,13 +5,7 @@ const cookieParse = require("cookie-parser");
 require("dotenv").config();
 
 mongoose
-<<<<<<< HEAD
   .connect(process.env.MONGO_URI)
-=======
-  .connect(
-    *
-  )
->>>>>>> 6fba4e2426f93036c33545dd3a02511f536c791b
   .then(() => console.log("mongo db connected"))
   .catch((error) => console.log(error));
 const app = express();
